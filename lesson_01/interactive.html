@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Интерактивный Фон</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        #interactive-background {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            transition: background-color 0.5s;
+        }
+    </style>
+</head>
+<body>
+    <h1>Перемещай мышку по странице</h1>
+    <div id="interactive-background"></div>
+
+    <script>
+document.addEventListener('mousemove', function(e) {
+    var background = document.getElementById('interactive-background');
+    var x = e.clientX / window.innerWidth;
+    var y = e.clientY / window.innerHeight;
+
+    var red = Math.round(x * 255);
+    var green = Math.round(y * 255);
+    var blue = 255 - red;
+
+    background.style.backgroundColor = 'rgb(' + red + ',' + green + ',' + blue + ')';
+});
+
+    </script>
+</body>
+</html>

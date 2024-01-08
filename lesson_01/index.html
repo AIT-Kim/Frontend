@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой HTML Дом</title>
+    <link rel="icon" type="image/x-icon" href="/pics/favicon.ico">
+
+    <style>
+        /* Шахматы */
+        .chess-board { border-collapse: collapse; width: 400px; height: 400px; }
+        .chess-board td { border: 1px solid black; width: 50px; height: 50px; }
+        .black-cell { background-color: gray; }
+        .white-cell { background-color: white; }
+        .chess-piece { text-align: center; font-size: 24px; }
+    </style>
+    <style>
+        /* Картинка и стилизация под окно */
+        .window-frame {
+            border: 3px solid #333; /* рама окна */
+            width: 500px;
+            height: 300px;
+            margin: 20px;
+            display: flex;
+            justify-content: space-between;
+            background: url('/pics/window-view.jpg') no-repeat center center; 
+            background-size: cover; /* фоновое изображение с видом на улицу */
+        }
+
+        .window-pane {
+            width: 48%; /* ширина каждой створки окна */
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.5); /* полупрозрачное стекло */
+            border: 2px solid #fff; /* рама створки */
+        }        
+    </style>
+
+    <style>
+        .content {
+            padding-bottom: 100px; 
+        }
+        /* Стилизация футера */
+        .footer {
+            background-color: #f2f2f2; 
+            text-align: center; 
+            padding: 20px 0; 
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 40px; 
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="content">
+
+      <h1>Добро пожаловать в мой HTML Дом!</h1>
+      
+      <p>Этот дом - основа для изучения HTML. Каждый элемент здесь играет свою уникальную роль.</p>
+  
+      <h2>Главная комната</h2>
+      <p>Встречайте основную часть дома, где всё происходит. Здесь вы найдёте мебель в виде абзацев и красочные картины.</p>
+  
+      <h3>Картины на стене</h3>
+      <p>Каждый заголовок здесь - как картина, привлекающая внимание и разделяющая пространство на секции.</p>
+  
+      <h3>Рассказывающая мебель</h3>
+      <p>Абзацы - это как мягкие кресла, приглашающие вас узнать больше о мире HTML.</p>
+      <p><strong>Жирный текст</strong> и <em>курсив</em> добавляют изюминку нашим разговорам.</p>
+  
+      <h3>Полки для сувениров</h3>
+      <ul>
+          <li>Первый сувенир</li>
+          <li>Второй сувенир</li>
+          <li>Третий сувенир</li>
+      </ul>
+  
+      <h3>Телепорт в другой мир</h3>
+      <p>Щёлкните <a href="https://www.apple.com">здесь</a>, чтобы мгновенно переместиться в яблочное королевство.</p>
+  
+      <p>Щёлкните <a href="interactive.html" target="_blank">здесь</a>, чтобы увидеть чудо.</p>
+  
+      <h3>Окна в мир</h3>
+      <div class="window-frame">
+          <div class="window-pane"></div>
+          <div class="window-pane"></div>
+      </div>
+  
+  
+  
+  
+      <h3>Игра в шахматы</h3>
+      <table class="chess-board">
+          <tr>
+              <td class="chess-piece black-cell">Л</td>
+              <td class="chess-piece white-cell">К</td>
+              <td class="chess-piece black-cell">С</td>
+              <td class="chess-piece white-cell">Ф</td>
+              <td class="chess-piece black-cell">Кр</td>
+              <td class="chess-piece white-cell">С</td>
+              <td class="chess-piece black-cell">К</td>
+              <td class="chess-piece white-cell">Л</td>
+          </tr>
+          <tr>
+              <td class="chess-piece white-cell">П</td>
+              <td class="chess-piece black-cell">П</td>
+              <td class="chess-piece white-cell">П</td>
+              <td class="chess-piece black-cell">П</td>
+              <td class="chess-piece white-cell">П</td>
+              <td class="chess-piece black-cell">П</td>
+              <td class="chess-piece white-cell">П</td>
+              <td class="chess-piece black-cell">П</td>
+          </tr>
+          <!-- Пустые клетки доски -->
+          <tr>
+              <td class="white-cell"></td>
+              <td class="chess-piece black-cell"></td>
+              <td class="white-cell"></td>
+              <td class="chess-piece black-cell"></td>
+              <td class="white-cell"></td>
+              <td class="chess-piece black-cell"></td>
+              <td class="white-cell"></td>
+              <td class="chess-piece black-cell"></td>
+          </tr>
+          <tr>
+              <td class="chess-piece black-cell"></td>
+              <td class="white-cell"></td>
+              <td class="chess-piece black-cell"></td>
+              <td class="white-cell"></td>
+              <td class="chess-piece black-cell"></td>
+              <td class="white-cell"></td>
+              <td class="chess-piece black-cell"></td>
+              <td class="white-cell"></td>
+          </tr>
+          <tr>
+              <td class="white-cell"></td>
+              <td class="chess-piece black-cell"></td>
+              <td class="white-cell"></td>
+              <td class="chess-piece black-cell"></td>
+              <td class="white-cell"></td>
+              <td class="chess-piece black-cell"></td>
+              <td class="white-cell"></td>
+              <td class="chess-piece black-cell"></td>
+          </tr>
+          <tr>
+              <td class="chess-piece black-cell"></td>
+              <td class="white-cell"></td>
+              <td class="chess-piece black-cell"></td>
+              <td class="white-cell"></td>
+              <td class="chess-piece black-cell"></td>
+              <td class="white-cell"></td>
+              <td class="chess-piece black-cell"></td>
+              <td class="white-cell"></td>
+          </tr>
+          <!-- Клетки для чёрных фигур -->
+          <tr>
+              <td class="chess-piece white-cell">П</td>
+              <td class="chess-piece black-cell">П</td>
+              <td class="chess-piece white-cell">П</td>
+              <td class="chess-piece black-cell">П</td>
+              <td class="chess-piece white-cell">П</td>
+              <td class="chess-piece black-cell">П</td>
+              <td class="chess-piece black-cell">П</td>
+              <td class="chess-piece white-cell">П</td>
+          </tr>
+          <tr>
+              <td class="chess-piece black-cell">Л</td>
+              <td class="chess-piece white-cell">К</td>
+              <td class="chess-piece black-cell">С</td>
+              <td class="chess-piece white-cell">Ф</td>
+              <td class="chess-piece black-cell">Кр</td>
+              <td class="chess-piece white-cell">С</td>
+              <td class="chess-piece black-cell">К</td>
+              <td class="chess-piece white-cell">Л</td>
+          </tr>
+      </table>
+      
+  
+  
+  
+  
+      <h3>Почтовый ящик</h3>
+      <form action="#">
+          <label for="name">Ваше имя:</label>
+          <input type="text" id="name" name="name">
+          <input type="submit" value="Отправить">
+      </form>
+
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 My Company. All Rights reserved.</p>
+    </div>
+
+
+</body>
+</html>
