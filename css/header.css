@@ -1,0 +1,44 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f9fa;
+    padding: 10px 20px;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo img {
+    height: 50px; 
+}
+
+.header-main {
+    margin-left: 15px;
+}
+
+.header-main h1 {
+    font-size: 24px;
+    margin: 0;
+    color: #333;
+    text-align: left;
+}
+
+.header-main p {
+    margin: 5px 0 0;
+    color: #555;
+    font-style: italic;
+    text-align: left;
+}
+
+.header-status span {
+    font-size: 24px;
+}
+
+
+
+
+

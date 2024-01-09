@@ -1,0 +1,38 @@
+{
+    "lessons": [
+        {
+            "title": "Lesson 1",
+            "description": "HTML tags, elements.<br> HTML document structure (html, head, body), attributes<br> Elements: h1..h6, p, ul, ol, li, img, a",
+            "lmsLink": "https://lms.ait-tr.de/#/group/cohort35/module/front_end/lesson/lesson_01",
+            "examples": [
+                {
+                    "name": "Work (HTML основы)",
+                    "url": "lesson_01/index.html",
+                    "description": "HTML tags, elements.<br> HTML document structure (html, head, body), attributes<br> Elements: h1..h6, p, ul, ol, li, img, a"
+                }
+            ]
+        },
+        {
+            "title": "Lesson 2",
+            "description": "Structural tags div, span and semantic tags header, footer, main, section.<br> Styling elements on HTML page. Styles: inline styles, CSS.<br> How to insert CSS into HTML document.<br> CSS selectors. Class and id attributes.<br>",
+            "lmsLink": "https://lms.ait-tr.de/#/group/cohort35/module/front_end/lesson/lesson_02",
+            "examples": [
+                {
+                    "name": "Визитка товара",
+                    "url": "lesson_02/index.html",
+                    "description": "Статическая визитка товара"
+                },
+                {
+                    "name": "Визитка специалиста",
+                    "url": "lesson_02/page1/index.html",
+                    "description": "Визитка специалиста"
+                },
+                {
+                    "name": "Страница каталог выполненных заданий",
+                    "url": "/",
+                    "description": "Веб страница считывает данные из json файла и отображает содержимое"
+                }
+            ]
+        }
+    ]
+}
