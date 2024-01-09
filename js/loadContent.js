@@ -15,17 +15,33 @@ function getBasePath() {
     return basePath;
 }
 
-function loadContent(url, containerId) {
+
+function loadContent(url, containerId, callbacks = []) {
     fetch(url)
         .then(response => response.text())
         .then(data => {
             document.getElementById(containerId).innerHTML = data;
+            callbacks.forEach(callback => {
+                callback();
+            });
         })
         .catch(err => console.error('Ошибка загрузки', err));
 }
 
+function updateLogoSrc() {
+    const logoImage = document.getElementById('company-logo');
+    if (logoImage) {
+        logoImage.src = getBasePath() + 'pics/ait-tr.svg';
+    } else {
+        console.error('Элемент логотипа не найден');
+    }
+}
+
+
+
 document.addEventListener('DOMContentLoaded', () => {
     const basePath = getBasePath();
-    loadContent(basePath + 'header.htm', 'header-container');
+    loadContent(basePath + 'header.htm', 'header-container', [updateLogoSrc]);
     loadContent(basePath + 'footer.htm', 'footer-container');
 });
+
