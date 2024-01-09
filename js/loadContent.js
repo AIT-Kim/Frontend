@@ -1,9 +1,11 @@
 function getBasePath() {
     const currentPath = window.location.pathname;
-    const depth = currentPath.split('/').length - 1;
+    const pathSegments = currentPath.split('/').filter(Boolean); 
 
-    let basePath = './';
-    for (let i = 1; i < depth; i++) {
+    let pathToRoot = pathSegments.length - 1; 
+
+    let basePath = '';
+    for (let i = 0; i < pathToRoot; i++) {
         basePath += '../';
     }
 
