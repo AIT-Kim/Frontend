@@ -1,21 +1,15 @@
-function getBasePath() {
-    const currentPath = window.location.pathname;
-    const pathSegments = currentPath.split('/').filter(Boolean); 
+function getBaseURL() {
+    const currentURL = window.location.href;
+    const url = new URL(currentURL);
 
-    let pathToRoot = pathSegments.length - 1; 
-
-    let basePath = '';
-    for (let i = 0; i < pathToRoot; i++) {
-        basePath += '../';
-    }
-
-    return basePath;
+    return url.origin;
 }
 
+function loadContent(relativePath, containerId) {
+    const baseURL = getBaseURL();
+    const fullPath = new URL(relativePath, baseURL).href;
 
-
-function loadContent(url, containerId) {
-    fetch(url)
+    fetch(fullPath)
         .then(response => response.text())
         .then(data => {
             document.getElementById(containerId).innerHTML = data;
@@ -24,7 +18,8 @@ function loadContent(url, containerId) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    const basePath = getBasePath();
-    loadContent(basePath + 'header.htm', 'header-container');
-    loadContent(basePath + 'footer.htm', 'footer-container');
+    loadContent('/header.htm', 'header-container');
+    loadContent('/footer.htm', 'footer-container');
 });
+
+
