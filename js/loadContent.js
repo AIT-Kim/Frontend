@@ -1,15 +1,22 @@
-function getBaseURL() {
-    const currentURL = window.location.href;
-    const url = new URL(currentURL);
+//TODO
+function getBasePath() {
+    const currentPath = window.location.pathname;
+    const pathSegments = currentPath.split('/').filter(Boolean);
+    
+    const isLocalhost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+    
+    let startIndex = isLocalhost ? 0 : 1;
 
-    return url.origin;
+    let basePath = '';
+    for (let i = startIndex; i < pathSegments.length - 1; i++) {
+        basePath += '../';
+    }
+
+    return basePath;
 }
 
-function loadContent(relativePath, containerId) {
-    const baseURL = getBaseURL();
-    const fullPath = new URL(relativePath, baseURL).href;
-
-    fetch(fullPath)
+function loadContent(url, containerId) {
+    fetch(url)
         .then(response => response.text())
         .then(data => {
             document.getElementById(containerId).innerHTML = data;
@@ -18,8 +25,7 @@ function loadContent(relativePath, containerId) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    loadContent('/header.htm', 'header-container');
-    loadContent('/footer.htm', 'footer-container');
+    const basePath = getBasePath();
+    loadContent(basePath + 'header.htm', 'header-container');
+    loadContent(basePath + 'footer.htm', 'footer-container');
 });
-
-
