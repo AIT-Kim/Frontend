@@ -1,0 +1,122 @@
+.content {
+    padding-bottom: 110px; 
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    overflow-y: auto;
+}
+
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: #87CEEB; 
+    overflow: hidden;
+}
+
+.scene {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 10px;
+}
+
+.sun {
+    width: 100px;
+    height: 100px;
+    background: yellow;
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+.mountain {
+    width: 120px;
+    height: 200px;
+    background: #8B4513; 
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+}
+
+.mountain.two {
+    left: 150px;
+}
+
+.mountain-top {
+    width: 120px;
+    height: 100px;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    background: #A52A2A; 
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.mountain-cap-1, .mountain-cap-2, .mountain-cap-3 {
+    background: white;
+    position: absolute;
+    bottom: 30px;
+    border-radius: 50%;
+}
+
+.mountain-cap-1 {
+    width: 35px;
+    height: 20px;
+    left: 25px;
+}
+
+.mountain-cap-2 {
+    width: 25px;
+    height: 16px;
+    left: 60px;
+}
+
+.mountain-cap-3 {
+    width: 28px;
+    height: 18px;
+    left: 80px;
+}
+
+.cloud {
+    width: 80px;
+    height: 40px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    left: 200px;
+}
+
+.cloud.two {
+    width: 100px;
+    height: 50px;
+    top: 80px;
+    left: 300px;
+}
+
+
+.caption-light {
+    font-size: 14px;
+    position: absolute; 
+    bottom: 0; 
+    width: 100%; 
+    text-align: center; 
+    color: white; 
+    padding: 0 0; 
+
+}
+
+.caption-dark {
+    font-size: 14px;
+    position: absolute; 
+    bottom: 0; 
+    width: 100%; 
+    text-align: center; 
+    color: black; 
+    padding: 0 0; 
+
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base href="./">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model and Positioning Example</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+</head>
+<body>
+
+    <div id="header-container"></div> 
+
+    <div class="content">
+        <div class="scene">
+            <div class="sun">
+                <p class="caption-dark">солнце</p>
+            </div>
+            <div class="mountain">
+                <p class="caption-light">гора 1</p>
+                <div class="mountain-top">
+                    <div class="mountain-cap-1">
+                        <p class="caption-dark">снег</p>
+                    </div>
+                    <div class="mountain-cap-2">
+                        <p class="caption-dark">снег</p>
+                    </div>
+                    <div class="mountain-cap-3">
+                        <p class="caption-dark">снег</p>
+                    </div>
+                    <p class="caption-light">верхушка горы 1</p>
+                </div>
+            </div>
+            <div class="mountain two">
+                <p class="caption-light">гора 2</p>
+                <div class="mountain-top">
+                    <div class="mountain-cap-1">
+                        <p class="caption-dark">снег</p>
+                    </div>
+                    <div class="mountain-cap-2">
+                        <p class="caption-dark">снег</p>
+                    </div>
+                    <div class="mountain-cap-3">
+                        <p class="caption-dark">снег</p>
+                    </div>
+                    <p class="caption-light">верхушка горы 2</p>
+                </div>
+            </div>
+            <div class="cloud">
+                <p class="caption-dark">облако 1</p>
+            </div>
+            <div class="cloud two">
+                <p class="caption-dark">облако 2</p>
+            </div>
+        </div>
+    </div>    
+
+
+    <div id="footer-container"></div>
+    <script src="../js/loadContent.js"></script>
+
+</body>
+</html>

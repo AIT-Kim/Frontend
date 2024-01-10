@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base href="./">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Example</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+</head>
+<body>
+
+    <div id="header-container"></div> 
+
+    <div class="content">
+        <form id="cr-form" action="submit.php" method="post">
+            <h2>Feedback Form</h2>
+    
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Your message" required></textarea>
+    
+            <label for="newsletter">Subscribe to newsletter:</label>
+            <input type="checkbox" id="newsletter" name="newsletter">
+    
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+        
+        <script src="js/script.js"></script>
+        <div class="caption-dark">
+            <p>Форма содержит: имя, адрес электронной почты, текстовое поле для сообщения и флажок для подписки на новостную рассылку.</p>
+
+            <p>Все поля ввода, кроме флажка, имеют атрибут required, обеспечивая базовую валидацию на стороне клиента.</p>
+            <p>Кнопки "Submit" и "Reset" позволяют отправить и очистить форму.</p>
+            <p>Обработчик submit - выводит данные формы в консоль и предотвращает отправку формы для демонстрационных целей.</p>
+        </div>
+        
+
+    </div>    
+
+
+
+    <div id="footer-container"></div>
+    <script src="../js/loadContent.js"></script>
+
+</body>
+</html> 

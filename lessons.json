@@ -33,6 +33,30 @@
                     "description": "Веб страница считывает данные из json файла и отображает содержимое"
                 }
             ]
+        },
+        {
+            "title": "Lesson 3",
+            "description": "CSS box model (padding, margin, border). Position. Practice.",
+            "lmsLink": "https://lms.ait-tr.de/#/group/cohort35/module/front_end/lesson/lesson_03",
+            "examples": [
+                {
+                    "name": "CSS Box Model and Positioning Example",
+                    "url": "lesson_03/index.html",
+                    "description": "Основные аспекты работы с CSS Box Model и позиционированием, <br>показывая, как эти свойства влияют на внешний вид <br>и расположение элементов на веб-странице."
+                }
+            ]
+        },
+        {
+            "title": "Lesson 4",
+            "description": "Forms, different types of inputs, action, name attribute, label. <br>Submitting and resettings forms. Forms validation, placeholders. <br>Result of form submit. Requests in browser's developer panel.",
+            "lmsLink": "https://lms.ait-tr.de/#/group/cohort35/module/front_end/lesson/lesson_04",
+            "examples": [
+                {
+                    "name": "CSS Box Model and Positioning Example",
+                    "url": "lesson_04/index.html",
+                    "description": "Работа с form"
+                }
+            ]
         }
     ]
 }
