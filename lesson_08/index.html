@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base href="./">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Угадай число!</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+    <div id="header-container"></div> 
+
+    <div class="content">
+        <div class="container">
+            <h1>Игра с числами</h1>
+            <div class="operation-container">
+                <div class="operation">number + 10</div>
+                <div class="operation">number * 2</div>
+                <div class="operation">number ** 2</div>
+            </div> <br>
+            <input type="text" id="input-number" placeholder="Введите число">
+            <button id="calculate-btn">Вычислить</button>
+            <p id="result"></p>
+            <p id="comparison"></p>
+            <p id="array-output"></p>
+        </div>
+
+    </div>    
+
+
+
+    <div id="footer-container"></div>
+    <script src="../js/loadContent.js"></script>
+
+</body>
+</html> 
