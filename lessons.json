@@ -81,6 +81,71 @@
                     "description": "Stylish Bootstrap Page"
                 }
             ]
+        },
+        {
+            "title": "Lesson 7",
+            "description": "Introduction to JS. <br>Using JS DOM functions to interact with DOM model (from console). <br>Inline JS and loading JS from external files. <br>Simple functions, constants and let. <br>Using functions as event listeners (onclick example). <br>Selecting elements by id.",
+            "lmsLink": "https://lms.ait-tr.de/#/group/cohort35/module/front_end/lesson/lesson_07",
+            "examples": [
+                {
+                    "name": "Игра Угадай число",
+                    "url": "lesson_07/index.html",
+                    "description": "Пример демонстрирует: <br>взаимодействие с DOM, <br>встраивание и загрузку JavaScript, <br>использование функций и переменных."
+                }
+            ]
+        },
+        {
+            "title": "Lesson 8",
+            "description": "JS: primitive types, +, -, *, /, **, typeof.<br> Comparison operators, strict and non-strict comparison (== vs ===), <br>coercion (automatic types conversions).<br> Arrays, for and while loops, iterating over arrays.",
+            "lmsLink": "https://lms.ait-tr.de/#/group/cohort35/module/front_end/lesson/lesson_08",
+            "examples": [
+                {
+                    "name": "Игра с числами",
+                    "url": "lesson_08/index.html",
+                    "description": "Демонстрация примитивных типов данных,<br> использование математических операторов,<br> различия между строгим и нестрогим сравнением,<br> а также работу с массивами и циклами в JavaScrip."
+                }
+            ]
+        },
+        {
+            "title": "Lesson 9",
+            "description": "Object, class, prototype inheritance, inheritance.",
+            "lmsLink": "https://lms.ait-tr.de/#/group/cohort35/module/front_end/lesson/lesson_09",
+            "examples": [
+                {
+                    "name": "NubChat",
+                    "url": "lesson_09/index.html",
+                    "description": "Чат, где пользователь может взаимодействовать с ботом."
+                }
+            ]
+        },
+        {
+            "title": "Lesson 10",
+            "description": "Array: destructuring assignments, array replication (spread syntax).<br>Functions declarations, anonymous functions, functional expressions, arrow functions<br>Array methods, passing functions as parameters",
+            "lmsLink": "https://lms.ait-tr.de/#/group/cohort35/module/front_end/lesson/lesson_10",
+            "examples": [
+                {
+                    "name": "Передача: <Мастер-шеф>",
+                    "url": "lesson_10/index.html",
+                    "description": "Пример демонстрирует использование массивов, <br>деструктуризацию, функции высшего порядка <br>и различные способы объявления функций в JavaScript."
+                }
+            ]
+        },
+        {
+            "title": "Lesson 11",
+            "description": "JS objects and array methods practice",
+            "lmsLink": "https://lms.ait-tr.de/#/group/cohort35/module/front_end/lesson/lesson_11",
+            "examples": [
+                {
+                    "name": "Виртуальная Библиотека",
+                    "url": "lesson_11/index.html",
+                    "description": "<Виртуальная Библиотека>.<br>Пользователи могут добавлять, <br>просматривать и удалять книги,<br> фильтровать и сортировать книги. <br>Массив объектов сохраняется в localStorage браузера."
+                }
+            ]
         }
     ]
 }
+
+
+
+
+
