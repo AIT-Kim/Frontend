@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base href="./">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Виртуальный аукцион</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+    <div id="header-container"></div> 
+
+    <div class="content">        
+        <h1>Виртуальный аукцион</h1>
+
+        <div id="auction-container">
+            <!-- 1 -->
+            <div class="auction-item">
+                <h3>Лот 1: Винтажные часы</h3>
+                <img src="pics/clock.jpg" alt="Винтажные часы">
+                <p>Описание: Редкие винтажные часы, начало XX века...</p>
+                <button class="bid-button">Сделать ставку</button>
+                <p>Осталось времени: <span class="time-left">60</span> секунд</p>
+                <p class="status">Ожидание ставок...</p>
+            </div>
+            <!-- 2 -->
+            <div class="auction-item">
+                <h3>Лот 2: Антикварная ваза</h3>
+                <img src="pics/vase.jpg" alt="Антикварная ваза">
+                <p>Описание: Редкая антикварная ваза...</p>
+                <button class="bid-button">Сделать ставку</button>
+                <p>Осталось времени: <span class="time-left">60</span> секунд</p>
+                <p class="status">Ожидание ставок...</p>
+            </div>
+            <!-- 3 -->
+            <div class="auction-item">
+                <h3>Лот 3: Картина Леонародо Да Винчи</h3>
+                <img src="pics/lisa.jpg" alt="Картина">
+                <p>Описание: Картина великого художника Леонародо Да Винчи...</p>
+                <button class="bid-button">Сделать ставку</button>
+                <p>Осталось времени: <span class="time-left">60</span> секунд</p>
+                <p class="status">Ожидание ставок...</p>
+            </div>
+        </div>
+
+    </div>    
+
+
+
+    <div id="footer-container"></div>
+    <script src="../js/loadContent.js"></script>
+
+</body>
+</html> 

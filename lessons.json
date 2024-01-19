@@ -153,6 +153,18 @@
                     "description": "Демонстрации работы с DOM, <br>обработки событий и создания интерактивных элементов."
                 }
             ]
+        },
+        {
+            "title": "Lesson 13",
+            "description": "Event Loop. Promises, then, setTimeout, setInterval.",
+            "lmsLink": "https://lms.ait-tr.de/#/group/cohort35/module/front_end/lesson/lesson_13",
+            "examples": [
+                {
+                    "name": "Виртуальный аукцион",
+                    "url": "lesson_13/index.html",
+                    "description": "Интерактивное веб-приложение, <br>имитирует асинхронные действия и динамически изменяет содержимое страницы."
+                }
+            ]
         }
     ]
 }
