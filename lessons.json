@@ -165,6 +165,18 @@
                     "description": "Интерактивное веб-приложение, <br>имитирует асинхронные действия и динамически изменяет содержимое страницы."
                 }
             ]
+        },
+        {
+            "title": "Lesson 14-15",
+            "description": "Async/Await<br>JS Fetch, work with API, modify DOM depends on the API response.",
+            "lmsLink": "https://lms.ait-tr.de/#/group/cohort35/module/front_end/lesson/lesson_14",
+            "examples": [
+                {
+                    "name": "Прогноз погоды",
+                    "url": "lesson_14/index.html",
+                    "description": "Прогноз погоды использует асинхронные функции <br>для получения текущей погоды от OpenWeatherMap API <br>и обрабатывает полученные данные выводя в браузер.<br>Дополнительно используется определение города на основе координат(LocationIQ)."
+                }
+            ]
         }
     ]
 }
