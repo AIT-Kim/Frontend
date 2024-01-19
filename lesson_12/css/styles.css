@@ -1,0 +1,55 @@
+.content {
+    padding-bottom: 110px; 
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    overflow-y: auto;
+}
+
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 20px;
+}
+
+#game-area {
+    position: relative;
+    width: 90%;
+    max-width: 600px;
+    height: 400px;
+    margin: 20px auto;
+    border: 3px dashed #007bff;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+#runaway-button {
+    position: absolute;
+    padding: 10px 20px;
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#runaway-button:hover {
+    background-color: #e64a19;
+    transform: scale(1.1);
+}
+
+#attempt-counter {
+    font-size: 1.5em;
+    color: #007bff;
+}
+
+p {
+    margin-top: 10px;
+}
+

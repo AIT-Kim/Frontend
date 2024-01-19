@@ -141,6 +141,18 @@
                     "description": "<Виртуальная Библиотека>.<br>Пользователи могут добавлять, <br>просматривать и удалять книги,<br> фильтровать и сортировать книги. <br>Массив объектов сохраняется в localStorage браузера."
                 }
             ]
+        },
+        {
+            "title": "Lesson 12",
+            "description": "Working with DOM - selecting elements, adding elements,<br>modifying elements (content and styles).<br>Events, event listeners. <br>Counter project, onhover - running away button",
+            "lmsLink": "https://lms.ait-tr.de/#/group/cohort35/module/front_end/lesson/lesson_12",
+            "examples": [
+                {
+                    "name": "Игра: Убегающая кнопка",
+                    "url": "lesson_12/index.html",
+                    "description": "Демонстрации работы с DOM, <br>обработки событий и создания интерактивных элементов."
+                }
+            ]
         }
     ]
 }
