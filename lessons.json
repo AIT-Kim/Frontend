@@ -194,6 +194,18 @@
                     "description": "Интерактивная книга на React."
                 }                
             ]
+        },
+        {
+            "title": "Lesson 17",
+            "description": "TypeScript vs JavaScript. Using React with TypeScript.<br>Refactor counter component and React app with TypeScript.",
+            "lmsLink": "https://lms.ait-tr.de/#/group/cohort35/module/front_end/lesson/lesson_17",
+            "examples": [
+                {
+                    "name": "Абракадабра",
+                    "url": "lesson_17/index.html",
+                    "description": "Приложение <Магический счётчик> на React с использованием TypeScript."
+                }                
+            ]
         }
     ]
 }
