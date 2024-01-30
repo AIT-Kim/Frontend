@@ -182,9 +182,22 @@
                     "description": "Прогноз погоды использует асинхронные функции <br>для получения текущей погоды от OpenWeatherMap API <br>и обрабатывает полученные данные выводя в браузер.<br>Дополнительно используется определение города на основе IP."
                 }                
             ]
+        },
+        {
+            "title": "Lesson 16",
+            "description": "Introduction to React. React as a library in js file. Creating simple React component.<br>Writing html code inside the js functions (jsx syntax).<br>Creating react app. Import and export. Developing counter component.",
+            "lmsLink": "https://lms.ait-tr.de/#/group/cohort35/module/front_end/lesson/lesson_16",
+            "examples": [
+                {
+                    "name": "Моя Волшебная Книга",
+                    "url": "lesson_16/index.html",
+                    "description": "Интерактивная книга на React."
+                }                
+            ]
         }
     ]
 }
+
 
 
 
