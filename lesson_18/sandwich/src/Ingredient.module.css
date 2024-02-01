@@ -1,0 +1,67 @@
+
+@keyframes drop {
+    0% {
+      opacity: 0;
+      transform: translateY(-100px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .ingredient {
+    animation: drop 0.5s ease forwards;
+    position: relative;
+    z-index: 5;
+  }
+  
+  .salad {
+    background-color: #4caf50;
+    width: 70%;
+    height: 15px;
+    margin: 2px 0;
+  }
+  
+  .tomato {
+    background-color: #ff5722;
+    width: 70%;
+    height: 15px;
+    margin: 2px 0;
+  }
+  
+  .cheese {
+    background-color: #ffeb3b;
+    width: 70%;
+    height: 15px;
+    margin: 2px 0;
+  }
+  
+  .bacon {
+    background-color: #795548;
+    width: 70%;
+    height: 15px;
+    margin: 2px 0;
+  }
+  
+  .beef {
+    background-color: #f44336;
+    width: 70%;
+    height: 15px;
+    margin: 2px 0;
+  }
+  
+  .chicken {
+    background-color: #ffeb3b;
+    width: 70%;
+    height: 15px;
+    margin: 2px 0;
+  }
+  
+  .cucumber {
+    background-color: #8bc34a;
+    width: 70%;
+    height: 15px;
+    margin: 2px 0;
+  }
+  
